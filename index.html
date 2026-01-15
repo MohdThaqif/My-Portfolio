@@ -2,131 +2,186 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thaqif | Profile</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: 30px auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
-        }
-        h1, h2 {
-            color: #0055aa;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .job {
-            margin-bottom: 15px;
-        }
-        .job-title {
-            font-weight: bold;
-        }
-        .skills-list, .responsibilities {
-            margin: 10px 0 0 20px;
-        }
-        .header {
-            text-align: center;
-        }
-        .header img {
-            width: 120px;
-            border-radius: 50%;
-            margin-bottom: 15px;
-        }
-        .tagline {
-            font-style: italic;
-            color: #666;
-        }
-    </style>
+    <title>Thaqif's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <section class="navigation-bar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation"> 
+                    <span class="navbar-toggler-icon"></span> 
+                </button> 
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08"> 
+                    <ul class="navbar-nav"> 
+                        <li class="nav-item"> 
+                            <a class="nav-link active" href="#">Home</a> 
+                        </li> 
+                        <li class="nav-item"> 
+                            <a class="nav-link active" href="#">About</a> 
+                        </li> 
+                        <li class="nav-item"> 
+                            <a class="nav-link active" href="#">Projects</a> 
+                        </li> 
+                        <li class="nav-item"> 
+                            <a class="nav-link active" href="#">Contact</a> 
+                        </li> 
+                    </ul> 
+                </div> 
+            </div> 
+        </nav>
+    </section>
 
-<div class="container">
-    
-    <div class="header">
-        <h1>Mohd Thaqif Bin Tahang</h1>
-        <p class="tagline">Manufacturing Product Engineer | Test Engineer | Data Enthusiast</p>
-    </div>
-
-    <div class="section">
-        <h2>Profile Summary</h2>
-        <p>
-            Data Analytics enthusiast with 3+ years of experience in data preparation, reporting, dashboard
-development, and cross-functional analytics. Adept at problem-solving, automation, and cross-functional collaboration,
-with a growing focus on data-driven decision-making. Seeking opportunities to apply technical and analytical skills in
-engineering or technology-driven environments.
-        </p>
-    </div>
-
-    <div class="section">
-        <h2>Work Experience</h2>
-
-        <div class="job">
-            <div class="job-title">Test Engineer – Texas Instruments Malaysia</div>
-            <div class="job-date">Mar 2025 – Oct 2025</div>
-            <ul class="responsibilities">
-                <li>Supported Texas Instruments AUDIO product line across A/T sites in Asia.</li>
-                <li>Implemented test coverage enhancements for customers.</li>
-            </ul>
+    <section class="about">
+        <div class="container col-xxl-8 px-4 py-5"> 
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5"> 
+                <div class="col-10 col-sm-8 col-lg-6"> 
+                    <img src="./assets/boy-chatgpt.png" class="d-block mx-lg-auto img-fluid" alt="boy pixel" width="400" loading="lazy"> 
+                </div> 
+                <div class="col-lg-6"> 
+                    <h1 class="display-5 fw-lighter text-body-emphasis lh-1 mb-3">Hi, my name is <span class="fw-bolder"><b>Thaqif</b></span></h1> 
+                    <p class="lead">I am a full-stack developer (in-progress hehe)</p> 
+                    
+                </div> 
+            </div> 
         </div>
+    </section>
 
-        <div class="job">
-            <div class="job-title">Manufacturing Product Engineer – Texas Instruments Malaysia</div>
-            <div class="job-date">Mar 2022 – Mar 2025</div>
-            <ul class="responsibilities">
-                <li>Collaborated with technicians to solve production line issues.</li>
-                <li>Developed automation projects to support ATE testing processes.</li>
-                <li>Supported Business Unit on product issues and yield improvement.</li>
-                <li>Troubleshot and debugged test solutions.</li>
-                <li>Involved in New Product Introduction (NPI) for Lead Frame Strip Test.</li>
-                <li>Used ETS364 tester platform.</li>
-            </ul>
+    <section class="projects">
+        <div class="container px-4 py-5" id="custom-cards"> 
+            <h2 class="pb-2 border-bottom">Projects</h2> 
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5"> 
+                <div class="col" id="project-1"> 
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./assets/nintendo.png');"> 
+                        
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Project 1</h3> 
+                            <ul class="d-flex list-unstyled mt-auto"> 
+                                <li class="me-auto"> 
+                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> 
+                                </li> 
+                                <li class="d-flex align-items-center me-3"> 
+                                    <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg> 
+                                        <small>Earth</small> 
+                                </li> 
+                                <li class="d-flex align-items-center"> 
+                                    <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                                            <use xlink:href="#calendar3"></use>
+                                    </svg> 
+                                    <small>3d</small> 
+                                </li> 
+                            </ul> 
+                        </div> 
+                    </div> 
+                </div>
+                <div class="col" id="project-2"> 
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');"> 
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Project 2</h3> 
+                            <ul class="d-flex list-unstyled mt-auto"> 
+                                <li class="me-auto"> 
+                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> 
+                                </li> 
+                                <li class="d-flex align-items-center me-3"> 
+                                    <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg> 
+                                        <small>Mars</small> 
+                                </li> 
+                                <li class="d-flex align-items-center"> 
+                                    <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                                            <use xlink:href="#calendar3"></use>
+                                    </svg> 
+                                    <small>4d</small> 
+                                </li> 
+                            </ul> 
+                        </div> 
+                    </div> 
+                </div>
+                <div class="col" id="project-3"> 
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');"> 
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Project 3</h3> 
+                            <ul class="d-flex list-unstyled mt-auto"> 
+                                <li class="me-auto"> 
+                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> 
+                                </li> 
+                                <li class="d-flex align-items-center me-3"> 
+                                    <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                        <use xlink:href="#geo-fill"></use>
+                                    </svg> 
+                                        <small>Dream</small> 
+                                </li> 
+                                <li class="d-flex align-items-center"> 
+                                    <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                                            <use xlink:href="#calendar3"></use>
+                                    </svg> 
+                                    <small>5d</small> 
+                                </li> 
+                            </ul> 
+                        </div> 
+                    </div> 
+                </div> 
+    </section>
+
+    <section class="contact">
+        <div class="container px-4 py-5" id="hanging-icons"> 
+            <h2 class="pb-2 border-bottom">Let's Connect</h2> 
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3"> 
+                <div class="col d-flex align-items-start"> 
+                    <div class="text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24" fill="none">
+                            <path d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect x="3" y="5" width="18" height="14" rx="2" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div> 
+                    <div> 
+                        <h3 class="fs-2 text-body-emphasis">Email</h3> 
+                        <p>mohdthaqif@gmail.com</p> 
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start"> 
+                    <div class="text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.9103 20.499 20.7963C20.663 20.7019 20.8185 20.5345 20.9007 20.364C21 20.1582 21 19.9181 21 19.438V16.6207C21 16.2169 21 16.015 20.9335 15.842C20.8749 15.6891 20.7795 15.553 20.6559 15.4456C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C16.2985 13.7904 16.0777 13.7101 15.8683 13.7237C15.6836 13.7357 15.5059 13.7988 15.3549 13.9058C15.1837 14.0271 15.0629 14.2285 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C9.77145 8.93713 9.97286 8.81628 10.0942 8.64506C10.2012 8.49408 10.2643 8.31637 10.2763 8.1317C10.2899 7.92227 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.745 3.67376 8.67601 3.48403 8.55442 3.3441C8.44701 3.22049 8.31089 3.12515 8.15802 3.06645C7.98496 3 7.78308 3 7.37932 3H4.56201C4.08188 3 3.84181 3 3.63598 3.09925C3.4655 3.18146 3.29814 3.33701 3.2037 3.50103C3.08968 3.69907 3.07375 3.91662 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div> 
+                    <div> 
+                        <h3 class="fs-2 text-body-emphasis">Phone</h3> 
+                        <p>+60198227107</p> 
+                    </div> 
+                </div>
+                <div class="col d-flex align-items-start"> 
+                    <div class="text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div> 
+                    <div> 
+                        <h3 class="fs-2 text-body-emphasis">Location</h3> 
+                        <p>Kuala Lumpur, Malaysia</p> 
+                    </div> 
+                </div>
+        </div> 
         </div>
+    </section>
 
-        <div class="job">
-            <div class="job-title">Protégé IT Executive – Ministry of Health Malaysia</div>
-            <div class="job-date">Jul 2021 – Jan 2022</div>
-            <ul class="responsibilities">
-                <li>Created Covid-19 data visualization and analysis for the Seafarer & Oil & Gas sector.</li>
-                <li>Created pivot tables for foreign worker Covid-19 cases.</li>
-                <li>Collected Covid-19 variant data and performed data entry.</li>
-                <li>Managed Excel datasets and prepared reports.</li>
-            </ul>
+    <section class="my-footer">
+        <div class="container"> 
+            <footer class="py-3 my-4"> 
+                <p class="text-center text-body-secondary border-top pt-3">© Mohd Thaqif. Built with ❤️ using Bootstrap.</p> 
+            </footer> 
         </div>
-    </div>
+    </section>
 
-    <div class="section">
-        <h2>Technical Skills</h2>
-        <ul class="skills-list">
-            <li>ATE Platforms: ETS364, SO3000, LT9900, LT9730, MT9918, AETV16, Advantest LH4</li>
-            <li>Automation & Debugging</li>
-            <li>Data Analysis & Visualization</li>
-            <li>Excel (Advanced), Pivot Tables</li>
-            <li>Manufacturing Process Support</li>
-            <li>Test Development, Test Coverage Improvement</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Contact</h2>
-        <p>Phone: +60198227107</p>
-        <p>Email: mohdthaqif06@gmail.com</p>
-        <p>Linkedin:  <a href="https://www.linkedin.com/in/mohd-thaqif-bin-tahang-9373771b5/" target="_blank">
-            mohd-thaqif-bin-tahang </a></p>
-        <p>Location: Kuala Lumpur, Malaysia</p>
-    </div>
-
-</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
